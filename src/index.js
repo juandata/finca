@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet'
+import { Provider } from 'react-redux'
+import store from './Redux/store';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +13,9 @@ ReactDOM.render(
       <meta charSet="utf-8" />
       <title>Administrador Finca</title>
     </Helmet>
+    <Provider store={store}>
     <App  />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

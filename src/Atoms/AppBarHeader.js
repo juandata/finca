@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Logo from '../Assets/logoDiccionarioEmberaEspanol.jpeg'
+import Logo from '../Assets/logo.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
   },
   logoStyles: {
     width: '60px',
-    marginRight: '10px'
+    marginRight: '10px',
+    borderRadius : '50%'
   }
 }));
 /**
@@ -29,7 +30,7 @@ export default function AppBarHeader() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          {/*<img className={classes.logoStyles} src={Logo} alt='Logo Diccionario Español-Embera' />*/}
+          {<img className={classes.logoStyles} src={Logo} alt='Logo Finca' />}
           <Typography variant="h6" className={classes.title}>
             Administrador Finca
           </Typography>

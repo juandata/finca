@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import AppBarHeader from './Atoms/AppBarHeader';
+import Capas from './Atoms/Capas';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -34,12 +35,11 @@ function App() {
       </header>
       <section>
         <Grid container className={classes.root} spacing={2} justify='center' alignContent='center'>
-          section 1
+          <Capas />
         </Grid>
       </section>
       <section>
         <Grid container className={classes.cardStyles} spacing={2} justify='center' alignContent='center'>
-          section 2
         </Grid>
       </section>
     </div>
